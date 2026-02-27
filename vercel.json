@@ -4,5 +4,11 @@
             "source": "/((?!api|assets|favicon\\.svg|sitemap\\.xml|robots\\.txt).*)",
             "destination": "/index.html"
         }
+    ],
+    "crons": [
+        {
+            "path": "/api/cron/fetch-news",
+            "schedule": "0 */6 * * *"
+        }
     ]
 }
